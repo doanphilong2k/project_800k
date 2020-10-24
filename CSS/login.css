@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    background-image: url(../Image/library2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/**************** Login *****************/
+
+#login-container {
+    width:450px;
+    height: 380px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.9);
+    margin: 130px auto;
+    position: relative;
+    box-shadow: 5px 10px 20px 10px rgba(0,0,0,0.7);
+}
+
+#login-container img.bookicon{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -85px;
+    left: 34%;
+}
+
+#login-container table{
+    margin: 5px auto;
+    padding-top: 60px;
+    border-spacing: 0 10px;
+}
+
+#login-container table tr td{
+    border: 2px solid white;
+}
+
+#login-container table tr td > i{
+    padding: 8px 7px;
+}
+
+#login-container table tr td i{
+    margin-left: 5px;
+    font-size: 20px;
+    color: dodgerblue;
+}
+
+#login-container table tr td > input{
+    width: 250px;
+}
+
+#login-container table tr td input{
+    height: 40px;
+    border: none;
+    padding-left: 8px;
+}
+
+#login-container table tr td input:focus{
+    outline: none;
+}
+
+#login-container table tr td button{
+    width: 100%;
+    height: 40px;
+    background-color: deepskyblue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#login-container table tr td.signup {
+    border: none;
+} 
+
+#login-container table tr td.signup p{
+    width:30%;
+    display: inline-block;
+    font-size: 13px;
+    text-align: right;
+    transition: .2s;
+    cursor: pointer;
+} 
+
+#login-container table tr td.signup p:hover{
+    color: dodgerblue;
+    transition: .2s;
+} 
+
+#login-container table tr td.signup p:nth-child(1){
+    margin-left: 105px;
+    margin-right:5px;
+} 
+
+#login-container #login-intro{
+    padding-top: 15px;
+}
+
+#login-container #login-intro .intro1{
+    width: 47%;
+    height: auto;
+    margin: 1px auto;
+}
+
+#login-container #login-intro .intro1 i{
+    display: inline-block;
+    color: rgb(255, 204, 0);
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#login-container #login-intro .intro1 h5{
+    /* color:blue; */
+    color: grey;
+    line-height: 30px;
+    display: inline-block;
+}
+
+#login-container #login-intro h2{
+    text-align: center;
+    color: dodgerblue;
+    line-height: 30px;
+}
+
+/**************** Signup *****************/
+
+#signup-container {
+    width:700px;
+    height: 420px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.9);
+    margin: 130px auto;
+    position: relative;
+    box-shadow: 5px 10px 20px 10px rgba(0,0,0,0.7);
+    display: none;
+}
+
+#signup-container img.bookicon{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -85px;
+    left: 40%;
+}
+
+#signup-container h2{
+    margin-left: 68px;
+    padding-top:40px;
+    color: dodgerblue;
+}
+
+#signup-container table{
+    margin: 5px auto;
+    padding-top: 5px;
+    border-spacing: 20px 20px;
+}
+
+#signup-container table tr td{
+    position: relative;
+}
+
+#signup-container table tr td input{
+    width: 260px;
+    height: 42px;
+    border: none;
+    padding-left: 10px;
+}
+
+#signup-container table tr td input:focus{
+    outline: none;
+}
+
+#signup-container table tr td i{
+    padding: 9px 11px;
+    position: absolute;
+    margin-top:2px;
+    margin-right:2px;
+    right: 0;
+    font-size: 20px;
+    color: dodgerblue;
+    background-color: rgba(0,0,0,0.04);
+} 
+
+#signup-container table tr td i.sp-icon { /**special icon**/
+    font-size: 14px;
+    padding: 12px 11px;
+}
+
+#signup-container table tr td select{
+    width: 270px;
+    height: 40px;
+    border: none;
+    padding-left: 5px;
+} 
+
+#signup-container table tr td button{
+    width: 100%;
+    height: 40px;
+    background-color: deepskyblue;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+} 
+
+#signup-container button.undo{
+    position: absolute;
+    right: 70px;
+    bottom: 40px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+} 
+
+
+
