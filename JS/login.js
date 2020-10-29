@@ -19,5 +19,28 @@ $(document).ready(function(){
             alert("Mật khẩu không được bỏ trống!");
         }
     })
+
+    $("#signup").click(function(){
+        if($("#fname").val() == "" || $("#fname").val() == null) 
+        {
+            alert("Họ không được bỏ trống!");
+        }
+        else if($("#lname").val() == "" || $("#lname").val() == null)
+        {
+            alert("Tên không được bỏ trống!");
+        }
+        else if($("#account").val() == "" || $("#account").val() == null)
+        {
+            alert("Tài khoản không được bỏ trống!");
+        }
+        else if($("#password").val() == "" || $("#password").val() == null)
+        {
+            alert("Mật khẩu không được bỏ trống!");
+        }
+        else if($("#email").val() == "" || $("#email").val() == null)
+        {
+            alert("Email không được bỏ trống!");
+        }
+    });
 });
 

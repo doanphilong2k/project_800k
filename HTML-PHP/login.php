@@ -3,6 +3,7 @@
 <head>
     <title> Login </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../CSS/login.css">
     <link rel="stylesheet" href="../../Assets//bootstrap-4.5.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../Assets//fontawesome-free-5.14.0-web/css/all.css">
@@ -57,23 +58,23 @@
         <form method="post" action="">
             <table>
                 <tr>
-                    <td> <input type="text" name="ho" placeholder="Họ"> </td>
-                    <td> <input type="text" name="ten" placeholder="Tên"> </td>
+                    <td> <input type="text" name="ho" placeholder="Họ" id="fname"> </td>
+                    <td> <input type="text" name="ten" placeholder="Tên" id="lname"> </td>
                 </tr>
                 <tr>
                     <td> 
                         <i class="fa fa-user"></i>
-                        <input type="text" name="tk" placeholder="Tài khoản"> 
+                        <input type="text" name="tk" placeholder="Tài khoản" id="account"> 
                     </td>
                     <td> 
                         <i class="fa fa-unlock sp-icon"></i>
-                        <input type="password" name="mk" placeholder="Mật khẩu"> 
+                        <input type="password" name="mk" placeholder="Mật khẩu" id="password"> 
                     </td>
                 </tr>
                 <tr>
                     <td> 
                         <i class="fa fa-envelope sp-icon"></i>
-                        <input type="text" name="email" placeholder="Địa chỉ Email"> 
+                        <input type="text" name="email" placeholder="Địa chỉ Email" id="email"> 
                     </td>
                     <td> 
                         <select>
@@ -84,7 +85,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2"> <button type="submit" name="signup"> Đăng ký </button></td>
+                    <td colspan="2"> 
+                        <select class="position"> 
+                            <option> Thí sinh </option>
+                            <option> Giám khảo trông thi </option>
+                        </select> 
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <button type="button" name="signup" id="signup"> Đăng ký </button></td>
                 </tr>
             </table>
         </form>

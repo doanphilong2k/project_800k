@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body {
+    background-color: white;
+}
+
+#header {
+    background: linear-gradient(to bottom left, rgb(30,144,255) 0%, white 100%);
+    width:100%;
+    height: 94px;
+    position: absolute;
+    /* box-shadow: 5px 5px 8px 8px rgba(0,0,0,0.2); */
+    box-shadow: 0px 1px 10px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+#header img{
+    width: 150px;
+    height: 150px;
+    /* border:1px solid red; */
+    margin-top: -30px;
+    padding-left: 60px;
+    display: inline-block;
+}
+
+#header p{
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 28px;
+    font-size: 35px;
+}
+
+#header button {
+    box-shadow: 0px 1px 10px 8px rgba(0,0,0,0.1);
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 27px;
+    right: 40px;
+    cursor: pointer;
+    outline: none;
+    transition: .2s;
+}
+
+#header button i{
+    font-size: 20px;
+    color: grey;
+    transition: .2s;
+}
+
+#header button:hover {
+    background-color: grey;
+    transition: .2s;
+}
+
+#header button:hover i{
+    color: white;
+    transition: .2s;
+}
+
+
+/********* right sidebar **********/
+
+
+#right-sidebar {
+    position: absolute;
+    top: 24.5%;
+    right: 5%;
+    width: 20%;
+    height: 355px;
+    box-shadow: 0px 1px 10px 8px rgba(0,0,0,0.1);
+}
+
+#right-sidebar table.right-sidebar-info {
+    width: 90%;
+    border-spacing: 0 10px;
+    margin: 5px auto;
+}
+
+#right-sidebar table.right-sidebar-info tr td{
+   color: grey;
+   font-size: 13px;
+   /* border: 1px solid red; */
+   /* padding: 10px 15px; */
+}
+
+#right-sidebar table.right-sidebar-info tr td:nth-child(1){
+   text-align: center;
+   padding: 10px 12px;
+}
+
+#right-sidebar table.right-sidebar-info tr td:nth-child(3){
+   font-weight: bold;
+}
+
+#right-sidebar table.right-sidebar-info tr td p{
+   font-size: 20px;
+   font-weight: bold;
+   color: dodgerblue;
+   text-align: center;
+}
+
+#right-sidebar table.right-sidebar-info tr td i{
+   font-size: 20px;
+   color: dodgerblue;
+}
+
+#right-sidebar #right-sidebar-button{
+    margin: 5px auto;
+    width:90%;
+}
+
+#right-sidebar #right-sidebar-button table.right-sidebar-btn{
+    margin: 1px auto;
+    border-spacing: 10px 10px;
+}
+
+#right-sidebar #right-sidebar-button table.right-sidebar-btn tr td{
+    width: 20%;
+}
+
+#right-sidebar #right-sidebar-button table.right-sidebar-btn tr td button{
+   background-color: dodgerblue;
+   color: white;
+   border: none;
+   width: 100%;
+   height:40px;
+   cursor: pointer;
+   border-radius: 5px;
+   font-size: 12px;
+   transition: .2s;
+   font-weight: bold;
+   outline: none;
+}
+
+#right-sidebar #right-sidebar-button table.right-sidebar-btn tr td button:hover{
+    box-shadow: 0px 1px 4px 3px rgba(0,0,0,0.3);
+    transition: .2s;
+}
+
+#right-sidebar #right-sidebar-button table.right-sidebar-btn tr td button.content-active{
+   background-color: rgb(255,77,77);
+   
+}
+
+/********* left container **********/
+
+#left-container {
+    position: relative;
+    top: 162px;
+    left: 5%;
+    width: 65%;
+    height: 440px;
+    box-shadow: 0px 1px 10px 8px rgba(0,0,0,0.1);
+}
+
+#left-container .l-c-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: dodgerblue;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#left-container table{
+    margin: 40px auto;
+    border-spacing: 0px 30px;
+}
+
+#left-container table tr td{
+    color: grey;
+}
+
+#left-container table tr td input{
+    /* border: 1px solid dodgerblue; */
+    border: none;
+    box-shadow: 0px 1px 5px 4px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 30px;
+    padding-left: 8px;
+    transition: .2s;
+}
+
+#left-container table tr td input:focus{
+    outline: none;
+    box-shadow: 0px 1px 5px 4px rgba(30,144,255,0.4);
+    transition: .2s;
+}
+
+#left-container table tr td button{
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    margin-left: 148px;
+    cursor: pointer;
+}
+
+#left-container h4{
+    color: red;
+    width:60%;
+    height:auto;
+    margin: 0 auto;
+    padding-top: 20px;
+    line-height:25px;
+    text-align: center;
+}
+
+#left-container .l-c-info {
+    height: 220px;
+}
+
+#left-container .l-c-info table{
+    margin: 0 20px 0 80px;
+    display: inline-block;
+}
+
+#left-container .l-c-info table tr td{
+    padding-right: 15px; 
+    font-size: 15px;
+}
+
+#left-container .l-c-info table tr td:nth-child(2){
+    font-weight: bold;
+}
+
+#left-container .l-c-parameter {
+    height: 170px;
+}
+
+#left-container .l-c-parameter div{
+    /* background-color: dodgerblue; */
+    background: linear-gradient(to bottom left, rgb(30,144,255) 0%, blue 100%);
+    border-radius: 5px;
+    float: left;
+    width:20%;
+    height: 85%;
+    margin-left: 34.5px;
+    color: black;
+}
+
+#left-container .l-c-parameter div:nth-child(2){
+    /* background-color: rgb(0, 255, 0); */
+    background: linear-gradient(to bottom left, rgb(0, 255, 0) 0%, green 100%);
+}
+
+#left-container .l-c-parameter div:nth-child(3){
+    /* background-color: rgb(255, 26, 26); */
+    background: linear-gradient(to bottom left, rgb(255, 26, 26) 0%, red 100%);
+}
+
+#left-container .l-c-parameter div:nth-child(4){
+    /* background-color: rgb(255, 204, 0); */
+    background: linear-gradient(to bottom left, yellow 0%, rgb(255, 204, 0) 100%);
+}
+
+#left-container .l-c-parameter div h3{
+    color: white;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+#left-container .l-c-parameter div p{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+#left-container .l-c-parameter div p i{
+    margin-right: 5px;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#left-container .l-c-history {
+    /* border: 1px solid red; */
+    height: 370px;
+}
+
+#left-container .l-c-history div{
+    width: 95%;
+    height: 94%;
+    margin: 10px auto;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#left-container .l-c-history div table{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+#left-container .l-c-history div table tr th{
+    border: 2px solid rgb(35,35,35);
+    background-color:  dodgerblue;
+    width:16.5%;
+    height: 20px;
+    padding: 5px 0;
+    color: white;
+    font-size:15px;
+}
+
+@media screen and (max-width: 1345px)
+{
+    #right-sidebar {
+        top: 28%;
+    }
+}
+
+@media screen and (max-width: 1200px)
+{
+    #right-sidebar {
+        height: 365px;
+    }
+}
+
+@media screen and (max-width: 1150px)
+{
+    #right-sidebar {
+        height: 375px;
+    }
+
+    #left-container .l-c-parameter div{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 950px)
+{
+    #right-sidebar {
+        display: none;
+    }
+
+    #left-container {
+        width: 90%;
+    }
+
+    #left-container .l-c-parameter div{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    #left-container .l-c-parameter div{
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 700px)
+{
+    #left-container .l-c-parameter div{
+        /* width:20%;
+        height: 85%; */
+        margin-left: 22px;
+    }
+
+    #left-container .l-c-info table{
+        margin: 0 0 0 50px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 630px)
+{
+    #left-container .l-c-info table{
+        margin: 0 0 0 20px;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 550px)
+{
+    #left-container .l-c-info table{
+        margin: 0 0 0 40px;
+        display: inline-block;
+    }
+
+    #left-container .l-c-info table tr td{
+        padding-right: 5px; 
+        font-size: 12px;
+    }
+
+    #left-container .l-c-parameter div h3{
+        font-size: 18px;
+    }
+
+    #left-container .l-c-parameter div p{
+        font-size: 20px;
+    }
+
+    #left-container .l-c-parameter div p > .fa-edit{
+        padding-top: 22px;
+    }
+
+    #left-container .l-c-parameter div p > .fa-exclamation-circle{
+        padding-top: 22px;
+    }
+
+    #left-container .l-c-parameter div{
+        margin-left: 17px;
+    }
+
+
+}
+
